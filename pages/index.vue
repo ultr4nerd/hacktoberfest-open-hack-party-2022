@@ -18,7 +18,7 @@
           class="subtitle has-text-centered"
           :class="darkMode ? 'has-text-manga' : 'has-text-void'"
         >
-          WIP: Poner código de conducta y link a student pack
+          WIP: Poner código de conducta, link a student pack y hacer README.md
         </h5>
       </div>
     </section>
