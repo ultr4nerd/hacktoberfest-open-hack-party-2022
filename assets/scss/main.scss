@@ -1,0 +1,159 @@
+@import "~bulma/sass/utilities/_all";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+
+// Hacktoberfest 2022 palette
+$manga: #E5E1E6;
+$void: #170F1E;
+$spark: #FFE27D;
+$surf: #64E3FF;
+$psybeam: #9092FF;
+$holo: linear-gradient(90deg, rgb(255, 215, 77) 0%, rgb(64, 221, 255) 30%, rgb(124, 127, 255) 85%) 0% 0% / 200% 100%;
+$giga: #B4FF39;
+
+// White colors
+$white: $manga;
+$white-ter: $manga;
+$white-bis: $manga;
+
+// Black colors
+$black: $void;
+$black-ter: $void;
+$black-bis: $void;
+
+// Colors
+$yellow: $spark;
+$green: $giga;
+$turquoise: $giga;
+$cyan: $surf;
+$blue: $surf;
+$purple: $psybeam;
+
+$primary: $psybeam;
+$secondary: $spark;
+
+// Fonts
+$family-monospace: 'JetBrains Mono', monospace;
+$family-primary: $family-monospace;
+$family-secondary: $family-monospace;
+$family-code: $family-monospace;
+
+// Text
+$text: $manga;
+$text-invert: $void;
+$text-light: $manga;
+$text-strong: $manga;
+$content-heading-color: $psybeam;
+$link-hover: $psybeam;
+
+// Backgrounds and texts
+$background: $void;
+$body-background-color: $void;
+$body-color: $manga;
+$body-weight: 500;
+
+
+// Custom colors
+$custom-colors: (
+  "manga": (
+    $manga, $void
+  ),
+  "void": (
+    $void, $manga
+  ),
+  "spark": (
+    $spark, findColorInvert($spark)
+  ),
+  "surf": (
+    $surf, findColorInvert($surf)
+  ),
+  "psybeam": (
+    $psybeam, findColorInvert($psybeam)
+  ),
+  "giga": (
+    $giga, findColorInvert($giga)
+  ),
+);
+
+$colors: mergeColorMaps(
+    (
+      "white": (
+        $white,
+        $black,
+      ),
+      "black": (
+        $black,
+        $white,
+      ),
+      "light": (
+        $light,
+        $light-invert,
+      ),
+      "dark": (
+        $dark,
+        $dark-invert,
+      ),
+      "primary": (
+        $primary,
+        $primary-invert,
+        $primary-light,
+        $primary-dark,
+      ),
+      "link": (
+        $link,
+        $link-invert,
+        $link-light,
+        $link-dark,
+      ),
+      "info": (
+        $info,
+        $info-invert,
+        $info-light,
+        $info-dark,
+      ),
+      "success": (
+        $success,
+        $success-invert,
+        $success-light,
+        $success-dark,
+      ),
+      "warning": (
+        $warning,
+        $warning-invert,
+        $warning-light,
+        $warning-dark,
+      ),
+      "danger": (
+        $danger,
+        $danger-invert,
+        $danger-light,
+        $danger-dark,
+      ),
+    ),
+    $custom-colors
+);
+
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+* {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.button {
+  background: rgb(229, 225, 230);
+  border: none;
+  border-radius: 2px;
+  clip-path: polygon(12px 0px, 100% 0px, 100% 72%, calc(100% - 12px) 100%, 0px 100%, 0px 12px);
+  color: rgb(23, 15, 30);
+  line-height: 24px;
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 18px;
+  text-decoration: none;
+}
+
+.button.is-holo {
+  background: $holo
+}
