@@ -10,6 +10,9 @@ $psybeam: #9092FF;
 $holo: linear-gradient(90deg, rgb(255, 215, 77) 0%, rgb(64, 221, 255) 30%, rgb(124, 127, 255) 85%) 0% 0% / 200% 100%;
 $giga: #B4FF39;
 
+// Holo invert
+$holo-invert: linear-gradient(90deg, rgb(124, 127, 255) 0%, rgb(255, 215, 77) 30%, rgb(64, 221, 255) 85%) 0% 0% / 200% 100%;
+
 // White colors
 $white: $manga;
 $white-ter: $manga;
@@ -156,4 +159,74 @@ $colors: mergeColorMaps(
 
 .button.is-holo {
   background: $holo
+}
+
+
+.button.is-holo:hover {
+  background: $holo-invert;
+  color: $void;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.github-username-input__container {
+  margin: auto;
+
+  @include mobile {
+    max-width: 75vw;
+  }
+
+  @include tablet-only {
+    max-width: 50vw;
+  }
+
+  @include desktop {
+    width: 25vw;
+  }
+}
+
+.github-username-input__dark {
+  color: $manga;
+  border-color: $manga;
+  background: $void;
+  text-align: center;
+}
+
+
+.github-username-input__dark:focus {
+  border-color: $surf;
+  background: $void;
+}
+
+.github-username-input__dark:disabled {
+  background: $void;
+  border-color: darken($manga, 20%);
+  color: darken($manga, 20%);
+}
+
+.github-username-input__light {
+  color: $void;
+  border-color: $void;
+  background: $manga;
+  text-align: center;
+}
+
+
+.github-username-input__light:focus {
+  border-color: $psybeam;
+  background: $manga;
+}
+
+.github-username-input__light:disabled {
+  background: $manga;
+  border-color: lighten(black, 40%);
+  color: lighten(black, 40%);
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="error-container">
-    <h1 class="title" :class="{'has-text-manga': darkMode, 'has-text-void': !darkMode}">{{ error.message }}</h1>
+    <h1 class="title" :class="defaultHasText">{{ error.message }}</h1>
     <b-button type="is-primary" tag="nuxt-link" to="/">
       Volver al inicio
     </b-button>
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import {mapGetters, mapState} from 'vuex'
+import {mapGetters} from 'vuex'
 import Navbar from "~/components/Navbar";
 
 export default {
@@ -21,12 +21,10 @@ export default {
   },
   components: {Navbar},
   computed: {
-    ...mapState({
-      darkMode: state => state.theme.darkMode
-    }),
     ...mapGetters({
       primaryColor: 'theme/primaryColor',
       primaryInvertColor: 'theme/primaryInvertColor',
+      defaultHasText: 'theme/defaultHasText',
     }),
   }
 }

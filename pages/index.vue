@@ -2,9 +2,8 @@
   <div>
     <section class="section pt-4">
       <div class="container has-text-centered">
-        <b-button type="is-holo">Self Check-In</b-button>
         <b-button
-          :type="darkMode ? 'is-manga' : 'is-void'"
+          type="is-holo"
           tag="nuxt-link"
           to="/participants"
         >
@@ -12,27 +11,38 @@
         </b-button>
       </div>
     </section>
-    <section class="section">
+    <section class="section pt-2">
       <div class="container">
         <h5
-          class="subtitle has-text-centered"
-          :class="darkMode ? 'has-text-manga' : 'has-text-void'"
+          class="title has-text-centered"
+          :class="defaultHasText"
         >
-          WIP: Poner código de conducta y link a student pack, hacer README.md,
-          check-in y página para presencial (comida, internet y reglas de convivencia)
+          ¡Estamos felices de verte por aquí!
         </h5>
+        <h2
+          class="subtitle has-text-centered"
+          :class="defaultHasText"
+        >
+          No te olvides de lo siguiente
+        </h2>
+        <div class="content has-text-centered">
+            <p class="mb-1">1. Llenar el <a href="https://r76cikd8zzh.typeform.com/to/SXTcbJRY">formulario de registro</a> si no lo has hecho.</p>
+            <p>2. Ingresar a <a href="https://discord.gg/VyyAkrKZ">Discord</a> y asignarte un rol.</p>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import {mapState} from "vuex";
+import {mapGetters} from "vuex";
 
 export default {
   name: 'IndexPage',
-  computed: mapState({
-    darkMode: state => state.theme.darkMode,
+  layout: "home",
+  computed: mapGetters({
+    defaultIs: "theme/defaultIs",
+    defaultHasText: "theme/defaultHasText",
   }),
   async asyncData({$content}) {
     const participants = await $content("participants")

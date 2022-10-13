@@ -11,7 +11,7 @@
       </h2>
     </NuxtLink>
     <div class="mt-1">
-      <span v-if="!!participant.email" class="tag is-giga">Contribuidor</span>
+      <span class="tag is-giga">Contribuidor</span>
     </div>
   </div>
 </template>

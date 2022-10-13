@@ -22,5 +22,6 @@
     "sass": "^1.55.0",
     "sass-loader": "10"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@3.2.4"
 }

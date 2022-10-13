@@ -1,7 +1,7 @@
 <template>
   <div>
     <main :style="{backgroundColor: primaryColor, color: primaryInvertColor}" class="pt-5">
-      <Navbar :large="$route.name === 'index'"/>
+      <Navbar/>
       <Nuxt/>
     </main>
     <footer :style="{backgroundColor: primaryColor, color: primaryInvertColor}" class="has-text-centered pb-6">
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import {mapState, mapGetters} from 'vuex'
+import {mapGetters, mapState} from 'vuex'
 import Navbar from "~/components/Navbar";
 
 export default {

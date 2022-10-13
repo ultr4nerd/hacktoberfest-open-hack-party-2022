@@ -21,7 +21,7 @@
       <div class="has-text-centered mt-6">
         <b-button
           tag="a"
-          :type="darkMode ? 'is-manga' : 'is-void'"
+          :type="defaultIs"
           :href="`https://github.com/${participant.slug}`"
           target="_blank"
         >
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import {mapState} from "vuex";
+import {mapGetters} from "vuex";
 
 import Avatar from "~/components/Avatar";
 import ParticipantInfo from "~/components/ParticipantInfo";
@@ -41,8 +41,8 @@ import ParticipantInfo from "~/components/ParticipantInfo";
 export default {
   name: "Participant",
   components: {Avatar, ParticipantInfo},
-  computed: mapState({
-    darkMode: state => state.theme.darkMode
+  computed: mapGetters({
+    defaultIs: "theme/defaultIs",
   }),
   async asyncData({$content, params, error}) {
     const participants = await $content("participants")
