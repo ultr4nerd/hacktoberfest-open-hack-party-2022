@@ -6,4 +6,4 @@ email: jadenavarroperez@gmail.com
 
 # La importancia del Open Source
 
-Creo que el Open Source es importante porque nos incentiva a colaborar con otras personas, además de que permite el acceso a cualquier persona, lo que nos deja ser participes de distintos proyectos, sin importar quién seamos.
+El Open Source es importante porque nos incentiva a colaborar con otras personas, lo que nos deja ser participes en distintos proyectos sin importar quién seamos. El participar en diversos proyectos, con diversas personas, nos ayuda a expandir nuestro entendimiento, así como la forma en la que vemos el mundo y ayudamos a convertirlo en un lugar mejor.
