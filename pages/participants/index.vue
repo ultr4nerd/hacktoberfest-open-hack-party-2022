@@ -31,6 +31,7 @@ export default {
   }),
   async asyncData({$content}) {
     const participants = await $content("participants")
+      .sortBy('fullName')
       .fetch()
     return {participants}
   }
