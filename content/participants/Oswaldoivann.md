@@ -1,6 +1,6 @@
 ---
 fullName: Oswaldoivann
-imageURL: https://github.com/Oswaldoivann/Oswaldoivann/blob/main/perfil.jpg
+imageURL: https://avatars.githubusercontent.com/u/77470916?v=4
 email: host@devsmex.me
 ---
 
