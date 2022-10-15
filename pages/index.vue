@@ -17,16 +17,15 @@
           class="title has-text-centered"
           :class="defaultHasText"
         >
-          ¡Estamos felices de verte por aquí!
+          ¡Gracias por haber asistido!
         </h5>
         <h2
           class="subtitle has-text-centered"
           :class="defaultHasText"
         >
-          No te olvides de lo siguiente
+          Aún puedes entrar a Discord para seguir la conversación
         </h2>
         <div class="content has-text-centered">
-            <p class="mb-1">1. Llenar el <a href="https://r76cikd8zzh.typeform.com/to/SXTcbJRY">formulario de registro</a> si no lo has hecho.</p>
             <p>2. Ingresar a <a href="https://discord.gg/VyyAkrKZ">Discord</a> y asignarte un rol.</p>
         </div>
       </div>
