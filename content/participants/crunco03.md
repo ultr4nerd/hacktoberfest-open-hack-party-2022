@@ -1,4 +1,6 @@
+---
 fullName: Gabriela Cruz Blanco
+
 imageURL: https://avatars.githubusercontent.com/u/80485789?v=4
 email: gabrielaa@ciencias.unam.mx
 ---
