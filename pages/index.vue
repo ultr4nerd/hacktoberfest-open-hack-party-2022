@@ -26,7 +26,7 @@
           Aún puedes entrar a Discord para seguir la conversación
         </h2>
         <div class="content has-text-centered">
-            <p>2. Ingresar a <a href="https://discord.gg/VyyAkrKZ">Discord</a> y asignarte un rol.</p>
+            <p>Ingresa a <a href="https://discord.gg/VyyAkrKZ">Discord</a> y asignarte un rol.</p>
         </div>
       </div>
     </section>
