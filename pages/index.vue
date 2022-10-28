@@ -23,7 +23,7 @@
           class="subtitle has-text-centered"
           :class="defaultHasText"
         >
-          Aún puedes entrar a Discord para seguir la conversación
+          Aún puedes entrar a Discord para seguir la conversación :)
         </h2>
         <div class="content has-text-centered">
             <p>Ingresa a <a href="https://discord.gg/VyyAkrKZ">Discord</a> y asignarte un rol.</p>
